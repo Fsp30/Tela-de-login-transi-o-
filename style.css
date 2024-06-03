@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('oi.png');
+    background-size: cover;
+    background-position: center;
+    margin: 0; /* Remova a margem para garantir que a imagem cubra toda a tela */
+    padding: 0; /* Remova o preenchimento para garantir que a imagem cubra toda a tela */
+    box-sizing: border-box; /* Adicione esta propriedade para incluir borda e preenchimento no cálculo do tamanho */
+    border: none; /* Remova a borda para garantir que a imagem cubra toda a tela */
+}
+
+
+.content{
+    border-radius: 15px;
+    background-color: #fff;
+    width: 60%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.content::before{
+    content: "";
+    position: absolute;
+    background-color: #309d84;
+    width: 40%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+    /* transição */
+    left: 0;
+}
+.title{
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.title-primary{
+    color: #fff;
+    text-transform: capitalize;
+}
+.title-second{
+    color: #309d84;
+}
+.description{
+
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 30px;
+}
+.description-primary{
+    color: #fff;
+}
+.description-second{
+    color: #7f8c8d;
+}
+.btn{
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 150px;
+    align-self: center;
+    border:none;
+    margin-top: 1rem;
+}
+.btn-primary{
+    background-color: rgba(255, 0, 0, 0);
+    border: 1px solid #fff;
+    transition: background-color 1.5s;
+}
+.btn-primary:hover{
+    background-color: #fff;
+    color: #309d84;
+}
+.btn-second{
+    background-color: #309d84;
+    border: 1px solid #309d84;
+    transition: background-color 1.5s;
+}
+.btn-second:hover{
+    background-color: #fff;
+    border: 1px solid #309d84;
+    color: #309d84;
+}
+.first-content{
+    display: flex;
+
+}
+.first-content .second-colunm{
+    z-index: 11;
+}
+.first-colunm{
+    text-align: center;
+    width: 40%;
+    z-index: 10;
+}
+.second-colunm{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+.social-midia{
+    margin: 1rem 0;
+}
+.link-social-midia:not(:first-child){
+    margin-left: 10px;
+}
+.link-social-midia .item-social-midia{
+    transition: background-color 1s;
+}
+.link-social-midia:hover .item-social-midia{
+    background-color: #309d84;
+    color: #fff;
+    border-color: #309d84;
+}
+.list-social-midia{
+    display: flex;
+    list-style-type: none;
+
+}
+.item-social-midia {
+    border: 3px solid #bdc3c7;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #95a5a6;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+.form input{
+    height: 45px;
+    width: 100%;
+    border: none;
+    background-color: #ecf0f1;
+}
+.label-input{
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    margin: 8px;
+}
+.icon-modify{
+    color: #7f8c8d;
+    padding: 0 5px;
+}
+/* Finalmente second content */
+.second-content{
+    position: absolute;
+    display: flex;
+}
+.second-content .first-colunm{
+    order: 2;
+    z-index: -1;
+}
+.second-content .second-colunm{
+    order: 1;
+    z-index: -1;
+}
+.password{
+    color: #34495E;
+    font-size: 14px;
+    margin: 15px 0;
+    text-align: center;
+}
+.password::first-letter{
+    text-transform: capitalize;
+}
+
+
+
+/* interação com a benção do js😭 */
+
+.sing-in-js .first-content .first-colunm,
+.sing-in-js .first-content .second-colunm{
+    z-index: -1;
+}
+
+
+.sing-in-js .second-content .second-colunm{
+    z-index: 11;
+
+}
+.sing-in-js .second-content .first-colunm{
+    z-index: 13;
+}
+.sing-in-js .content::before{
+    left: 60%;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    animation: slidelin 0.5s;
+    
+    z-index: 12;
+}
+
+.sing-up-js .content::before{
+    animation: slidelin2 0.5s;
+
+    z-index: 12;
+}
+
+
+.sing-up-js .second-content .first-colunm,
+.sing-up-js .second-content .second-colunm{
+    z-index: -1;
+}
+
+
+.sing-up-js .first-content .second-colunm{
+    z-index: 11;
+}
+.sing-up-js .first-content .first-colunm{
+    z-index: 13;
+}
+
+.sing-in-js .first-content .second-colunm{
+    z-index: -1;
+    position: relative;
+    animation: deslocamento 0.5s;
+}
+
+.sing-up-js .second-content .second-colunm{
+    position: relative;
+    z-index: -1;
+    animation: deslocamento2 0.5s;
+}
+
+/* parte de animação */
+@keyframes slidelin{
+    from{
+        left:0;
+        width: 40%;
+    }
+    
+    to{
+        left: 60%;
+        width: 40%;
+    }
+}
+@keyframes slidelin2{
+    from{
+        left:60%;
+        width: 40%;
+    }
+    to{
+        left: 0%;
+        width: 40%;
+    }
+}
+
+
+/* animação para entrar ao lado */
+@keyframes deslocamento{
+    from{
+        left: 0px;
+        opacity: 1;
+        z-index: 12;
+    }
+    
+    to{
+        left: -110;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+@keyframes deslocamento2{
+    from{
+        left: 0px;
+        opacity: 1;
+        z-index: 1;
+    }
+    to{
+        left: 110;
+        opacity: 0;
+        z-index: -1;
+    }
+}
