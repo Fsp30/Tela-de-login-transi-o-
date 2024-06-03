@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/5aafa2606e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('drntg.png');
+            background-size: cover;
+            background-position: center;
+            height: 100vh; /* Garante que a imagem ocupará toda a altura da tela */
+        }
+    </style>
+
+</head>
+<body>
+        <div class="conteiner">
+            <div class="content first-content">
+                <div class="first-colunm">
+                    <h2 class="title-primary">Oi, Bem vindo de volta</h2>
+                    <p class="description description-primary">Estamos ansiosos para tentar  lhe ajudar hoje</p>
+                    <p class="description description-primary">Use suas informações para entrar</p>
+                    <button id="a1" class="btn btn-primary">sing in</button>
+                </div>
+                <div class="second-colunm">
+                    <h2 class="title title-second">Crie sua conta</h2>
+                    <div class="social-midia">
+                        <ul class="list-social-midia" >
+                            <a class="link-social-midia" href="#">
+                                <li class="item-social-midia">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </li>
+                            </a>
+                            <a class="link-social-midia" href="#">        
+                                <li class="item-social-midia">
+                                    <i class="fa-brands fa-google-plus-g"></i>
+                                </li>
+                            </a>    
+                            <a class="link-social-midia" href="#">
+                                <li class="item-social-midia">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </li>
+                            </a>    
+                        </ul>
+                    </div><!-- fim do social midia -->
+                    <p class="description description-second">Ou use um email para  se cadastrar</p>
+                    <!-- formulário de cadastro -->
+                    <form action="cadastro_user" class="form">
+                        <label class="label-input" for="">
+                            <i class="fa-solid fa-user icon-modify"></i>
+                            <input type="text" placeholder="Nome" name="nome" id="nome" required>
+                        </label>
+                        <label class="label-input" for="">
+                            <i class="fa-regular fa-envelope icon-modify"></i>
+                            <input type="email" placeholder="E-mail" name="email" id="email" required>
+                        </label>
+                        <label class="label-input" for="">
+                            <i class="fa-solid fa-key icon-modify"></i>
+                            <input type="password" placeholder="Senha" name="senha" id="senha" required>
+                        </label>
+                        <button class="btn btn-second">sing up</button>
+                    </form>
+                </div><!-- second colunm -->
+            </div><!-- first content -->
+            <div class="content second-content">
+                <div class="first-colunm">
+                    <h2 class="title  title-primary">Olá!!!</h2>
+                    <p class="description-primary">Insira seus dados </p>
+                    <p class="description-primary">e começaremos nossa jornada</p>
+                    <button id="b2" class="btn btn-primary">sing up</button>
+                </div>
+                <div class="second-colunm">
+                    <h2 class="title title-second">Entre para continuarmos</h2>
+                    <div class="social-midia">
+                        <ul class="list-social-midia" >
+                            <a class="link-social-midia" href="#">
+                                <li class="item-social-midia">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </li>
+                            </a>
+                            <a class="link-social-midia" href="#">        
+                                <li class="item-social-midia">
+                                    <i class="fa-brands fa-google-plus-g"></i>
+                                </li>
+                            </a>    
+                            <a class="link-social-midia" href="#">
+                                <li class="item-social-midia">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </li>
+                            </a>    
+                        </ul>
+                    </div><!-- fim do social midia -->
+                    <p class="description description-second">Ou utilize seu email</p>
+                    <!-- formulário de login -->
+                    <form action="login" class="form">
+                        <label class="label-input" for="">
+                            <i class="fa-regular fa-envelope icon-modify"></i>
+                            <input type="email" placeholder="E-mail" name="email" id="senha" required>
+                        </label>
+                        <label class="label-input" for="">
+                            <i class="fa-solid fa-key icon-modify"></i>
+                            <input type="password" placeholder="Senha" name="senha" id="senha" required>
+                        </label>
+                        <a class="password" href="#">Esqueceu sua senha?</a>
+                        <button class="btn btn-second">sing in</button>
+                    </form>
+                </div><!-- second colunm -->
+            </div><!-- second contend fim -->
+        </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
